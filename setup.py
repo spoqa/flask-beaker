@@ -14,9 +14,11 @@ setup(name='Flask-Beaker',
       author_email='longfin@spoqa.com',
       url='http://github.com/spoqa/flask-beaker',
       packages=['flaskext'],
+      test_suite='test_beaker',
       install_requires=[
         'setuptools',
-        'Flask',
+        'Flask>=0.8',
+        'flask-testing',
         'Beaker'
         ],
       )
