@@ -15,10 +15,11 @@ setup(name='Flask-Beaker',
       url='http://github.com/spoqa/flask-beaker',
       packages=['flaskext'],
       test_suite='test_beaker',
+      tests_require=['flask-testing'],
+      zip_safe = True,
       install_requires=[
         'setuptools',
         'Flask>=0.8',
-        'flask-testing',
         'Beaker'
         ],
       )
