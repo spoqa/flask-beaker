@@ -23,6 +23,7 @@
     @app.route("/get_value")
     def get_value():
         return session["key"]
+    ```
 
 [Flask Beaker]: http://github.com/spoqa/flask-beaker
 [Flask]: http://flask.pocoo.org/docs/
