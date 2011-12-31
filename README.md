@@ -5,7 +5,6 @@
 ## How to use
 
     ```python
-
     from flask import app, session
     from flaskext.beaker import Beaker
 
