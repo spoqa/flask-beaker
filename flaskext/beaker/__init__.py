@@ -3,7 +3,8 @@ from beaker.middleware import SessionMiddleware
 
 class BeakerSessionInterface(SessionInterface):
     def open_session(self, app, request):
-        return request.environ['beaker.session']
+        if request.environ.has_key('beaker.session'):
+            return request.environ['beaker.session']
     def save_session(self, app, session, response):
         session.save()
 
