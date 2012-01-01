@@ -16,9 +16,11 @@ class BeakerTestCase(TestCase):
         return app
     def test(self):
         from flask import session, request
+        from beaker.session import SessionObject
 
         def _set():
             assert request.environ.has_key("beaker.session")
+            assert isinstance(session._get_current_object(), SessionObject)
             session['key'] = "value"
             return "ok"
             
