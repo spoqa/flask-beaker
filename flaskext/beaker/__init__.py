@@ -32,4 +32,4 @@ class Beaker(object):
             }
         
         self.app.wsgi_app = SessionMiddleware(self.app.wsgi_app, session_opts)
-        self.session_interface = BeakerSessionInterface()
+        self.app.session_interface = BeakerSessionInterface()
