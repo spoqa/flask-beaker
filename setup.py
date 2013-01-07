@@ -7,7 +7,7 @@ Flask extension for Beaker
 from setuptools import setup
 
 setup(name='Flask-Beaker',
-      version='0.1',
+      version='0.3',
       description='Flask extension for Beaker',
       long_description=__doc__,
       author='longfin',
