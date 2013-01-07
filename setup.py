@@ -20,6 +20,6 @@ setup(name='Flask-Beaker',
       install_requires=[
         'setuptools',
         'Flask>=0.8',
-        'Beaker'
+        'Beaker==1.6.3'
         ],
       )
